@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-cabecero',
@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrl: './cabecero.component.css'
 })
 export class CabeceroComponent {
+
+  @Input() presupuestoTotal: number;
+  @Input() ingresoTotal: number;
+  @Input() egresoTotal: number;
+  @Input() porcentajeTotal: number;
+
+  constructor(){}
 
 }
